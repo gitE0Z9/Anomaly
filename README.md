@@ -1,7 +1,7 @@
 # Anomaly
 Time series anomaly detector with deep learning
 
-> This project aims to provide an alerting tool for monitoring hundreds of nodes.
+> This project aims to provide an alerting tool for monitoring a cluster with hundreds of nodes.
 
 _*Detect mode*_
 
