@@ -1,10 +1,12 @@
 # Anomaly
 Time series anomaly detector with deep learning
 
+> This project aims to provide an alerting tool for monitoring hundreds of nodes.
+
 _*Detect mode*_
 
 ```
-  from Alpha_Anomaly.detect import detector
+  from Anomaly.detect import detector
   
    # model_tyep includes lstm, cnn and custom. If the custom is used, please provice th path to the model
 
@@ -19,7 +21,7 @@ _*Detect mode*_
 _*Train mode*_
 
 ```
-  from Alpha_Anomaly.train import training
+  from Anomaly.train import training
 
   new_model=training()
 
