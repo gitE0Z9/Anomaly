@@ -1,9 +1,9 @@
 # Anomaly
 Time series anomaly detector with deep learning
 
-#Detect mode
+*Detect mode*
 
-'''
+```python
   from Alpha_Anomaly.detect import detector
   
    # model_tyep includes lstm, cnn and custom. If the custom is used, please provice th path to the model
@@ -14,11 +14,11 @@ Time series anomaly detector with deep learning
    
   model.detect(hostname='PNT16',data_path='anomaly.experiment/data/cpu/PNT16/201901/CPU_ALL-20190115.csv',critical_value=-13.5)
 
-'''
+```
 
-#Train mode
+*Train mode*
 
-'''
+```python
   from Alpha_Anomaly.train import training
 
   new_model=training()
@@ -35,4 +35,4 @@ Time series anomaly detector with deep learning
 
   new_model.save('new_model.h5')
 
-'''
+```
