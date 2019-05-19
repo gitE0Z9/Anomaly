@@ -1,7 +1,7 @@
 # Anomaly
 Time series anomaly detector with deep learning
 
-> *Detect mode*
+_*Detect mode*_
 
 ```python
   from Alpha_Anomaly.detect import detector
@@ -16,7 +16,7 @@ Time series anomaly detector with deep learning
 
 ```
 
-> *Train mode*
+_*Train mode*_
 
 ```python
   from Alpha_Anomaly.train import training
