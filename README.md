@@ -5,22 +5,26 @@ Time series anomaly detector with deep learning
 
 _*Detect mode*_
 
-```
+```python
   from Anomaly.detect import detector
   
    # model_tyep includes lstm, cnn and custom. If the custom is used, please provice th path to the model
 
-  model=detector(model_type='lstm') 
+  model=detector(model_type='lstm')
+
+  # read data from specific path csv
+
+  model.read_data(hostname='PNT16', item='cpu', date='20190115', time_field='Date', data_field='% Processor Time')
 
    # critical_value is optimized manually due to no label.
    
-  model.detect(hostname='PNT16',data_path='anomaly.experiment/data/cpu/PNT16/201901/CPU_ALL-20190115.csv',critical_value=-13.5)
+  model.detect(critical_value=-13.5)
 
 ```
 
 _*Train mode*_
 
-```
+```python
   from Anomaly.train import training
 
   new_model=training()
